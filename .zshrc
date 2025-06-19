@@ -27,3 +27,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+eval "$(uv generate-shell-completion zsh)"

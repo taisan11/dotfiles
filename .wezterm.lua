@@ -10,8 +10,19 @@ config = wezterm.config_builder()
 -- ime
 config.use_ime = true
 config.window_decorations = "RESIZE"
-config.font_size = 13.5
+config.font_size = 16
 config:set_strict_mode(true)
+config.window_background_opacity = 0.86
+config.macos_window_background_blur = 30
+config.window_decorations = "RESIZE"
+config.window_frame = {
+  inactive_titlebar_bg = "none",
+  active_titlebar_bg = "none",
+}
+
+config.window_background_gradient = {
+   colors = { "#000000" },
+}
 
 config.keys = {
   {
