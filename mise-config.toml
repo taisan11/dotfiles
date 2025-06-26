@@ -1,0 +1,9 @@
+[tools]
+"asdf:mise-plugins/mise-nim" = "latest"
+bun = "latest"
+deno = "latest"
+pnpm = "latest"
+zig = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = []

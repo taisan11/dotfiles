@@ -28,3 +28,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 eval "$(uv generate-shell-completion zsh)"
+export PATH="/home/taisan11/.cache/.bun/bin:$PATH"
