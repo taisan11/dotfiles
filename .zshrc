@@ -29,3 +29,4 @@ esac
 # pnpm end
 eval "$(uv generate-shell-completion zsh)"
 export PATH="/home/taisan11/.cache/.bun/bin:$PATH"
+export custom_vroot="/home/taisan11/.local/share/mise/installs/asdf-mise-plugins-mise-v/latest"

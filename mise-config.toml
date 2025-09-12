@@ -1,5 +1,6 @@
 [tools]
 "asdf:mise-plugins/mise-nim" = "latest"
+"asdf:mise-plugins/mise-v" = "latest"
 bun = "latest"
 deno = "latest"
 pnpm = "latest"
