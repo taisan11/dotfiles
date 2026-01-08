@@ -11,23 +11,6 @@ USE_POWERLINE="true"
 # Example:
 #    is not a diamond
 HAS_WIDECHARS="false"
-# Source manjaro-zsh-configuration
-# if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-#   source /usr/share/zsh/manjaro-zsh-config
-# fi
-# Use manjaro zsh prompt
-# if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-#   source /usr/share/zsh/manjaro-zsh-prompt
-# fi
-
-# export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"
-# plugins=(
-# git
-# zsh-syntax-highlighting
-# zsh-autosuggestions
-# history-substring-search
-# )
 
 # source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit
@@ -66,15 +49,15 @@ done
 eval "$(~/.local/bin/mise activate zsh)"
 
 # pnpm
-export PNPM_HOME="/home/taisan11/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 eval "$(uv generate-shell-completion zsh)"
-export PATH="/home/taisan11/.cache/.bun/bin:$PATH"
-export custom_vroot="/home/taisan11/.local/share/mise/installs/asdf-mise-plugins-mise-v/latest"
+export PATH="$HOME/.cache/.bun/bin:$PATH"
+export custom_vroot="$HOME/.local/share/mise/installs/asdf-mise-plugins-mise-v/latest"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
